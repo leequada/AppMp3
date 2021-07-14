@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/imgviewbackgroundbanner"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></ImageView>
+    <View
+        android:background="@drawable/custome_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></View>
+    <RelativeLayout
+        android:id="@+id/RelativeBanner"
+        android:layout_alignBottom="@id/imgviewbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgviewBanner"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"></ImageView>
+        <TextView
+
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imgviewBanner"
+            android:layout_alignTop="@id/imgviewBanner"
+            android:id="@+id/TitleBanner"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <RelativeLayout
+            android:layout_below="@id/TitleBanner"
+            android:layout_toRightOf="@id/imgviewBanner"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/contentBanner"
+                android:textColor="#ffffff"
+                android:maxLines="2"
+                android:layout_marginRight="40dp"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

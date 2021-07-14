@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:background="#444444"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/RelativeAlbum"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="ALBUM HOT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/TextXemthemAlbum"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffff"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:text="Xem thêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/RecyclerviewAlbum"
+
+        android:layout_below="@id/RelativeAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

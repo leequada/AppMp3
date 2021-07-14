@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="#444444"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:id="@+id/PlaylistTitle"
+        android:text="PLAYLIST HOT NHẤT"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <ListView
+        android:id="@+id/ListviewPlaylist"
+        android:layout_below="@id/PlaylistTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+    <TextView
+        android:text="Xem thêm"
+        android:textStyle="italic"
+        android:textSize="19dp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/ic_moreplaylist"
+        android:layout_below="@id/ListviewPlaylist"
+        android:id="@+id/ViewmorePlaylist"
+        android:background="#444444"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#FAF2F2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Relativelayout_temp_songfrbanner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#555555"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:elevation="5dp">
+        <ImageView
+
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:id="@+id/Img_temp_songfrbanner"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="#fff"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:id="@+id/txtNamesong_temp_songfrbanner"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:text="Let me love you"
+            android:ellipsize="end"
+            android:layout_toRightOf="@id/Img_temp_songfrbanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/Namesinger_temp_songfrbanner"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/txtNamesong_temp_songfrbanner"
+            android:layout_toRightOf="@id/Img_temp_songfrbanner"
+            android:textColor="#fff"
+            android:text="Justin bieber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/like_temp_songfrbanner"
+            android:src="@drawable/ic_love_white"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_play_more"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/ImgageButtonBack"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"></ImageView>
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/custome_background_banner"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"></View>
+    <ImageView
+        android:id="@+id/imgViewContentPlaylist"
+        android:layout_alignBottom="@id/ImgageButtonBack"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="6dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"></ImageView>
+    <TextView
+        android:text="Top 10 nahc trung hat nhat"
+        android:layout_alignBottom="@id/imgViewContentPlaylist"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@id/imgViewContentPlaylist"
+        android:id="@+id/NameSongPlaylist"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+</RelativeLayout>
